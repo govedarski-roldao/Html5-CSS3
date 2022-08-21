@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exemplos de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="iname">Nome</label>
+                <input type="text" name="Name" id="iname" required autocomplete="name" maxlength="30">
+            </p>
+            <p>
+                <label for="isubname">Sobrenome</label>
+                <input type="text" name="subname" id="isubname" autocomplete="additional-name" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" placeholder="xxxxxxxxx@xxxxx.xxx" required>
+            </p>
+            <p>
+                <label for="itelefone">Phone number</label>
+                <input type="tel" name="Telephone" id="itelefone" autocomplete="tel-national"
+                    pattern="^\(\d{2}\)[0-9]{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx" required>
+            </p>
+        </fieldset>
+
+        <!-- Estudar RegEx-->
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+
+</html>
