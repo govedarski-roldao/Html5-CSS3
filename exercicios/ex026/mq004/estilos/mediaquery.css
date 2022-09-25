@@ -22,11 +22,20 @@
 
     main {
         border: 2px solid black;
+        width: 90vw;
+        text-align: center;
     }
 
     main h1{
         text-shadow: none;
         color: black;
+    }
+
+    main::after{
+        content: "Esta página foi um bom teste";
+        text-decoration: overline;
+        
+       
     }
 
     img#phone {display: none;}
